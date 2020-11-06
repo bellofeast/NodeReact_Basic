@@ -101,8 +101,4 @@ app.get('/api/users/logout', auth, (req, res) => {
 
 const port = 5000
 
-app.get('/', (req, res) => res.send('Hello World!~~ '))
-
-app.get('api/hello', (req, res) => res.send('Hello World!~~ '))
-
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

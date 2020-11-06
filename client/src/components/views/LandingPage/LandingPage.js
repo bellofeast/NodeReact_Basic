@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Axios from 'axios'
 
 function LandingPage(props) {
@@ -13,14 +13,6 @@ function LandingPage(props) {
             }
         })
     }
-
-    useEffect(() => {
-        Axios.get('/api/hello')
-        .then(response => { 
-            console.log(response)
-        })
-    }, [])
-
 
     return (
         <div style={{
