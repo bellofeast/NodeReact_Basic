@@ -16,7 +16,9 @@ function LandingPage(props) {
 
     useEffect(() => {
         Axios.get('/api/hello')
-        .then(response => console.log(response.data))
+        .then(response => { 
+            console.log(response)
+        })
     }, [])
 
 

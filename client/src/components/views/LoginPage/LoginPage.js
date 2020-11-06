@@ -30,7 +30,7 @@ function LoginPage(props) {
                  if (response.payload.loginSuccess) {
                      props.history.push('/')
                  } else {
-                     alert('Error˝')
+                     alert('로그인이 필요합니다')
                  }
          })
 
