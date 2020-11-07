@@ -76,8 +76,6 @@ userSchema.methods.generateToken = function(cb) {
         if(err) return cb(err)
         cb(null, user)
     })
-    
-
 }
 
 userSchema.statics.findByToken = function(token, cb) {
@@ -96,9 +94,6 @@ userSchema.statics.findByToken = function(token, cb) {
         })
     })
 }
-
-
-
 
 const User = mongoose.model('User', userSchema)
 

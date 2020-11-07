@@ -69,7 +69,6 @@ app.post('/api/users/login', (req, res) => {
   })
 })
 
-
 // role 1 어드민    role 2 특정 부서 어드민 
 // role 0 -> 일반유저   role 0이 아니면  관리자 
 app.get('/api/users/auth', auth, (req, res) => {
@@ -98,7 +97,10 @@ app.get('/api/users/logout', auth, (req, res) => {
     })
 })
 
-
 const port = 5000
+
+app.get('/', (req, res) => res.send('Hello World!~~ '))
+
+app.get('/api/hello', (req, res) => res.send('Hello World!~~ '))
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

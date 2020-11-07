@@ -51,6 +51,7 @@ function RegisterPage(props) {
          })
 
     }
+
     return (
         <div style={{
             display: 'flex', justifyContent: 'center', alignItems: 'center'
